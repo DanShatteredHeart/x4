@@ -21,12 +21,14 @@ void draw() {
   background( r,g,b );
   showButton( button1X, button1Y, button1W, button1H );
   fill(100,0,0);
-  text( "Click me ^^", button1X+button1W/4, button1Y+button1H*2/3 );
+  text( "Click me ^^", 25, 45 );
+  fill( 255,255,255);
+  text( "Danny Raymundo", 10, 20);
 }
 // Draw the button.
 void showButton( float x, float y, float w, float h ) {
-  fill( 135,180,255 );
-  rect ( x,y, w,h );
+  fill( 135,180,190 );
+  rect ( 25,30, 80,20 );
 }
 
 //// HANDLERS:  keys & click
@@ -35,7 +37,7 @@ void keyPressed() {
   if (key == 'r') reset();
 }
 void mousePressed() {
-  if ( hit( mouseX,mouseY, 100,100, 50,50 ) ) {
+  if ( hit( mouseX,mouseY, 25,30, 80,20 ) ) {
     counter=  counter+1;
     if (counter % 2 > 0) {
       r= 255;
