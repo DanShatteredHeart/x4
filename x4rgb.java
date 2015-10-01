@@ -21,9 +21,9 @@ void draw() {
   background( r,g,b );
   showButton( button1X, button1Y, button1W, button1H );
   fill(100,0,0);
-  text( "Click me ^^", 25, 45 );
-  fill( 255,255,255);
-  }
+  text( "Im a Button ^^", 26, 45 );
+  
+}
 // Draw the button.
 void showButton( float x, float y, float w, float h ) {
   fill( 135,180,190 );
