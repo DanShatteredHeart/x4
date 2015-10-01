@@ -21,13 +21,13 @@ void draw() {
   background( r,g,b );
   showButton( button1X, button1Y, button1W, button1H );
   fill(100,0,0);
-  text( "Im a Button ^^", 26, 45 );
+  text( "Im a Button ^^", 284,255 );
   
 }
 // Draw the button.
 void showButton( float x, float y, float w, float h ) {
   fill( 135,180,190 );
-  rect ( 25,30, 80,20 );
+  rect ( 280,240, 80,20 );
 }
 
 //// HANDLERS:  keys & click
@@ -36,7 +36,7 @@ void keyPressed() {
   if (key == 'r') reset();
 }
 void mousePressed() {
-  if ( hit( mouseX,mouseY, 25,30, 80,20 ) ) {
+  if ( hit( mouseX,mouseY, 280,240, 80,20 ) ) {
     counter=  counter+1;
     if (counter % 2 > 0) {
       r= 255;
