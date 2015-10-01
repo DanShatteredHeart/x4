@@ -23,8 +23,7 @@ void draw() {
   fill(100,0,0);
   text( "Click me ^^", 25, 45 );
   fill( 255,255,255);
-  text( "Danny Raymundo", 10, 20);
-}
+  }
 // Draw the button.
 void showButton( float x, float y, float w, float h ) {
   fill( 135,180,190 );
