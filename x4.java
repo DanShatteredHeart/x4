@@ -10,9 +10,9 @@ void setup() {
   reset();
 }
 void reset() {
-  r=  100;
-  g=  200;
-  b=  250;
+  r= 115;
+  g=  13;
+  b= 129;
 }
 
 
@@ -21,12 +21,13 @@ void draw() {
   background( r,g,b );
   showButton( button1X, button1Y, button1W, button1H );
   fill(100,0,0);
-  text( "Click me!", button1X+button1W/4, button1Y+button1H*2/3 );
+  text( "Im a Button ^^", 284,255 );
+  
 }
 // Draw the button.
 void showButton( float x, float y, float w, float h ) {
-  fill( 255,255,0 );
-  rect ( x,y, w,h );
+  fill( 135,180,190 );
+  rect ( 280,240, 80,20 );
 }
 
 //// HANDLERS:  keys & click
@@ -35,12 +36,24 @@ void keyPressed() {
   if (key == 'r') reset();
 }
 void mousePressed() {
-  if ( hit( mouseX,mouseY, 100,100, 50,50 ) ) {
+  if ( hit( mouseX,mouseY, 280,240, 80,20 ) ) {
     counter=  counter+1;
     if (counter % 2 > 0) {
-      r=  255;
-      g=  50;
-      b=  0;
+      r= 255;
+     g= 123;
+     b= 245;
+     }else if (counter % 3 > 0){
+       r=255;
+       g=51;
+       b=97;
+     }else if (counter % 4 > 0){
+       r=178;
+       g=255;
+       b=121;
+     }else if(counter % 5 > 0){
+       r=100;
+       g=255;
+       b=232;
     } else {
       reset();
     }
